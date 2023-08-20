@@ -1,0 +1,3 @@
+smb enumeration with user cred args
+
+nmap -p 445 --script smb-enum-users --script-args smbusername=administrator,smbpassword=smbserver 10.10.10.10
