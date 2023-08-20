@@ -7,3 +7,5 @@ https://github.com/System-CTL/CEH_CHEAT_SHEET
 https://github.com/cpardue/CEH-Practical-Notes/tree/main
 
 https://github.com/hunterxxx/CEH-v12-Practical
+
+https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.md
