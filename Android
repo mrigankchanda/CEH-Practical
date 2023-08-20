@@ -1,0 +1,10 @@
+#for entropy check
+
+sudo adb pull folderpath
+
+sudo apt install ent
+ent file.elf
+#entropy= number compare the entropy
+
+#to check sha384 
+sha384sum file.elf
